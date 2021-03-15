@@ -122,7 +122,7 @@ jobs:
         allowUpdates: true
         tag: ${{ env.version }}
         commit: main
-        token: ${{ secrets.GITHUB_TOKEN   }}
+        token: ${{ secrets.GIT_TOKEN   }}
         body: |
           PHICOMM-N1-OpenWRT-Image 
         artifacts: "/opt/openwrt/tmp/*.xz"
@@ -148,4 +148,5 @@ jobs:
         keep_latest: 3
         delete_tags: true
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+        GIT_TOKEN: ${{ secrets.GIT_TOKEN }}  
+
