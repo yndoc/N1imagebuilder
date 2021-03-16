@@ -148,5 +148,5 @@ jobs:
         keep_latest: 3
         delete_tags: true
       env:
-        GIT_TOKEN: ${{ secrets.GIT_TOKEN }}  
+        GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}  
 
