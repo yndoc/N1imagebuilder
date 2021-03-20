@@ -69,8 +69,8 @@ jobs:
       #if: steps.opwenwrtcache.outputs.cache-hit != 'true'
       run: |
         cd /opt/dl
-        
-        wget  https://github.com/yndoc/N1Openwrt/releases/download/$version/openwrt-armvirt-64-default-rootfs.tar.gz
+        wget  https://github.com/yndoc/N1imagebuilder/releases/download/untagged-dca00eb12d0a44b5d315/openwrt-armvirt-64-default-rootfs.tar.gz
+        #wget  https://github.com/yndoc/N1Openwrt/releases/download/$version/openwrt-armvirt-64-default-rootfs.tar.gz
         wget ${FLIPPY_URL}
         
     - name: Check Files
